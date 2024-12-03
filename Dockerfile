@@ -4,6 +4,8 @@ WORKDIR /usr/src/proiectmap
 COPY ./frontend /usr/src/proiectmap/frontend
 COPY ./backend /usr/src/proiectmap/backend
 
+RUN chown -R node:node /usr/src/proiectmap
+
 WORKDIR /usr/src/proiectmap/backend
 RUN npm install
 
