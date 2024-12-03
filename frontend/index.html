@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Binary Tree Analyzer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Binary Tree Analyzer</h1>
+  <div class="input-section">
+    <label for="random">Introdu numere aleatorii (separate prin virgulă):</label>
+    <input type="text" id="random" placeholder="Ex: 5,3,8,1,6">
+    <button onclick="analyzeTree('random')">Analizează</button>
+  </div>
+  <div class="input-section">
+    <label for="ascending">Introdu numere crescătoare:</label>
+    <input type="text" id="ascending" placeholder="Ex: 1,2,3,4,5">
+    <button onclick="analyzeTree('ascending')">Analizează</button>
+  </div>
+  <div class="input-section">
+    <label for="descending">Introdu numere descrescătoare:</label>
+    <input type="text" id="descending" placeholder="Ex: 5,4,3,2,1">
+    <button onclick="analyzeTree('descending')">Analizează</button>
+  </div>
+  <div id="result"></div>
+  <script src="aplicatie.js"></script>
+</body>
+</html>

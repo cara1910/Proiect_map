@@ -1,0 +1,16 @@
+{
+    "name": "binary-tree-analyzer",
+    "version": "1.0.0",
+    "description": "Aplicatie pentru analiza performantei arborilor binari",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1",
+      "body-parser": "^1.19.0"
+    },
+    "author": "Numele Tău",
+    "license": "ISC"
+  }
+  
