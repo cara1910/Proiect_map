@@ -1,6 +1,9 @@
 # Folosește imaginea oficială de Node.js
 FROM node:latest
 
+# Instalează tini (manager de procese)
+RUN apt-get update && apt-get install -y tini
+
 # Setează directorul de lucru
 WORKDIR /usr/src/proiectmap
 
