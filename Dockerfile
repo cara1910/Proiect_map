@@ -11,6 +11,6 @@ WORKDIR /usr/src/proiectmap/frontend
 RUN npm install -g http-server
 RUN http-server ./frontend -p 8080
 
-EXPOSE 8080
+EXPOSE 8080 3000
 
-CMD [ "node","./backend/server.js" ]
+CMD ["sh", "-c", "http-server ./frontend -p 8080 & node ./backend/server.js"]
