@@ -1,4 +1,5 @@
 FROM node:latest
+RUN apt-get update && apt-get install -y tini
 WORKDIR /usr/src/proiectmap
 
 COPY ./frontend /usr/src/proiectmap/frontend
@@ -15,4 +16,4 @@ RUN http-server ./frontend -p 8080
 
 EXPOSE 8080 3000
 
-CMD ["sh", "-c", "http-server ./frontend -p 8080 & node ./backend/server.js"]
+CMD ["/usr/bin/tini", "--","sh", "-c", "http-server ./frontend -p 8080 & node ./backend/server.js"]
