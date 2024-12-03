@@ -12,7 +12,7 @@ RUN npm install
 
 WORKDIR /usr/src/proiectmap/frontend
 RUN npm install -g http-server
-RUN http-server ./frontend -p 8080
+
 
 EXPOSE 8080 3000
 
